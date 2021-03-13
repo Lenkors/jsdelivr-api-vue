@@ -1,0 +1,6 @@
+.result {
+    &-wrapper {
+        display: grid;
+        grid-column-gap: repeat(3, 1fr);
+    }
+}

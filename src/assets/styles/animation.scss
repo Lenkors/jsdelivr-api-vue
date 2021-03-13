@@ -1,0 +1,8 @@
+.no-mode-fade-enter-active, .no-mode-fade-leave-active {
+    transition: opacity .5s
+  }
+  
+  .no-mode-fade-enter-from, .no-mode-fade-leave-to {
+    opacity: 0
+  }
+  
