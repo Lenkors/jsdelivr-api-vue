@@ -8,7 +8,7 @@
                 :class="{ 'error-search' : searchError }" 
                 v-model="searchValue" 
                 placeholder="Введите наименование пакета" 
-                @change="searchPckg" 
+                @change="searchPckg($event)" 
                 id="header-search"> 
 
                 <button class="search-wrapper-button" @click="searchPckg">Поиск</button>

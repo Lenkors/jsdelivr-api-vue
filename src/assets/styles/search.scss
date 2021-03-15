@@ -4,6 +4,9 @@
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
   }
+  body {
+      margin: 0;
+  }
 .error-search {
     box-shadow: 0 0 3pt 2pt red;
 }
@@ -12,6 +15,7 @@
     margin-top:1em;
 }
 .search {
+    padding: 0.5em;
     &-wrapper {
         display: flex;
         &-button {

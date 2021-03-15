@@ -1,6 +1,7 @@
 <template>
   <header-search/>
   <search-result/>
+  <app-footer/>
 </template>
 
 <script>

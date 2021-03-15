@@ -26,7 +26,7 @@ export default createStore({
         state.searchResult = result
         state.loading = false
         if (state.searchResult.length == 0) {
-          state.specialMsg = `Результатов по запросу "${state.searchValue}" нет` 
+          state.specialMsg = `Результатов по вашему запросу "${state.searchValue}" не найдено. Проверьте правильность ввода` 
         }
       })
     }
