@@ -12,7 +12,7 @@
                         </h3>
                     </div>
                     <div class="result-card-content">
-                       <div> Описание:{{item.description}} </div>
+                       <div @click="openModal(item)" class="result-card-content-desc"> Описание:{{item.description}} </div>
                        <div> Ссылка:<a :href="item.homepage">{{item.name}}</a> </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
     <nav aria-label="Page navigation">
       <ul class="pagination">
         <li class="page-item">
-          <button type="button" class="page-link" v-if="page != 1" @click="page--"> Previous </button>
+          <button type="button" class="page-link" v-if="page != 1" @click="page--"> Назад </button>
         </li>
         <li class="page-item">
           <button type="button" class="page-link"
@@ -51,7 +51,7 @@
            :key="index"> {{pageNumber}} </button>
         </li>
         <li class="page-item">
-          <button type="button" @click="page++" v-if="page < pages.length" class="page-link"> Next </button>
+          <button type="button" @click="page++" v-if="page < pages.length" class="page-link"> Вперед </button>
         </li>
       </ul>
     </nav>
